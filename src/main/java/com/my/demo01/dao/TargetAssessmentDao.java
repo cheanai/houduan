@@ -17,5 +17,5 @@ public interface TargetAssessmentDao {
     TargetAssessment[] searchTargetAssessment(String college);
 
     @Update("UPDATE target_assessment SET ${tertiaryIndicators} = #{taskVolume}, date = #{date} WHERE college = #{college}")
-    void insert(String college, String tertiaryIndicators, String taskVolume, Date date);
+    void insert(String college, String tertiaryIndicators, String taskVolume, String date);
 }

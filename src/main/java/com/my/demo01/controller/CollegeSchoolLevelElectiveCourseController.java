@@ -21,6 +21,12 @@ public class CollegeSchoolLevelElectiveCourseController {
         return service.select(department);
     }
 
+    @RequestMapping("/selectAllCollegeSchoolLevelElectiveCourse")
+    @ResponseBody
+    public CollegeSchoolLevelElectiveCourse[] selectAll(){
+        return service.selectAll();
+    }
+
     @RequestMapping("/searchCollegeCourse")
     @ResponseBody
     public CollegeSchoolLevelElectiveCourse[] searchCollegeCourse(String Course,String department){

@@ -33,7 +33,7 @@ public class TargetAssessmentController {
 
     @RequestMapping("/insertTargetAssessment")
     @ResponseBody
-    public void insert (String college, String secondaryIndicators, String tertiaryIndicators, String taskVolume, Date date){
+    public void insert (String college, String secondaryIndicators, String tertiaryIndicators, String taskVolume, String date){
         service.insert(college,secondaryIndicators,tertiaryIndicators,taskVolume,date);
     }
 }

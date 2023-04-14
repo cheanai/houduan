@@ -34,4 +34,8 @@
         public void update(int id, String courseName, String instructorName, String courseCount) {
             dao.update(id,courseName,instructorName,courseCount);
         }
+
+        public CollegeSchoolLevelElectiveCourse[] selectAll() {
+            return dao.selectAll();
+        }
     }
