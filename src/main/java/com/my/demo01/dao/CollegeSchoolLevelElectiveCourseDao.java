@@ -26,4 +26,7 @@ public interface CollegeSchoolLevelElectiveCourseDao {
 
     @Select("select * from college_school_level_elective_course")
     CollegeSchoolLevelElectiveCourse[] selectAll();
+
+    @Update("UPDATE college_school_level_elective_course SET state =#{state} WHERE  id =#{id}")
+    void updateState(int id, String state);
 }

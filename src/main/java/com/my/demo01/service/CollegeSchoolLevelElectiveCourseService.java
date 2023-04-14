@@ -38,4 +38,9 @@
         public CollegeSchoolLevelElectiveCourse[] selectAll() {
             return dao.selectAll();
         }
+
+        @Transactional
+        public void updateState(int id, String state) {
+            dao.updateState(id,state);
+        }
     }

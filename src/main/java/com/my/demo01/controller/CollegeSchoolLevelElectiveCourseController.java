@@ -48,6 +48,12 @@ public class CollegeSchoolLevelElectiveCourseController {
         service.update(id,courseName,instructorName,courseCount);
     }
 
+    @RequestMapping("/updateCollegeCourseState")
+    @ResponseBody
+    public void updateState (int id ,String state){
+        service.updateState(id,state);
+    }
+
     @RequestMapping("/deleteCollegeCourse")
     @ResponseBody
     public void delete(int id){
